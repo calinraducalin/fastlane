@@ -58,7 +58,7 @@ module Spaceship
       })
 
       ESSENTIAL_INCLUDES = [
-        "appStoreVersions",
+        "appStoreVersions"
         # "prices"
       ].join(",")
 
