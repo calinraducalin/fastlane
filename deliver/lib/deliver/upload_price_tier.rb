@@ -22,7 +22,10 @@ module Deliver
       # Prices from app's relationship doess not have price tier so need to fetch app price with price tier relationship
       app_prices = app.prices
 
-      if app_prices.nil? UI.message("App has no prices yet... No changes required." return end
+      if app_prices.nil? 
+        UI.message("App has no prices yet... No changes required.") 
+        return 
+      end
 
       if app_prices.first
         app_price = Spaceship::ConnectAPI.get_app_price(app_price_id: app_prices.first.id, includes: "priceTier").first
