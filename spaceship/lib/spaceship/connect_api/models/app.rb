@@ -54,6 +54,7 @@ module Spaceship
         "contentRightsDeclaration" => "content_rights_declaration",
 
         "appStoreVersions" => "app_store_versions",
+        # This attribute is already deprecated. It will be removed in a future release.
         "prices" => "prices"
       })
 
